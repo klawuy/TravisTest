@@ -10,7 +10,7 @@
         "symfony/http-foundation": "2.4.*@stable",
         "twig/twig" : "1.*@stable",
         "twbs/bootstrap":"2.3.2",
-        "phpunit/phpunit":"6.0"
+        "phpunit/phpunit":"6.1"
     },
 	"require-dev": {
 		"filp/whoops": "1.0.*@stable"
