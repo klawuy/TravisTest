@@ -21,7 +21,8 @@ after_success:
 
 notifications:
   slack:
-    'etdsolutions:5tQeepLBMLrQjXKBhhUk3Xzq'
+    rooms:
+    - etdsolutions:5tQeepLBMLrQjXKBhhUk3Xzq#travis_test
     template:
           - "%{repository} (%{commit}) : %{message} %{foo} "
           - "Build details: %{build_url}"
