@@ -1,5 +1,5 @@
 <?php
-require (JUri::base() . 'www_front/calculator.php');
+require (JPATH_BASE . 'www_front/calculator.php');
 
 class CalculatorTests extends PHPUnit_Framework_TestCase
 {
