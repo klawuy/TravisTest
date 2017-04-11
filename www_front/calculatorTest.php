@@ -1,6 +1,6 @@
 <?php
 require (__DIR__ . '/calculator.php');
-include ('../vendor/phpunit/phpunit/tests/Framework/TestCaseTest.php');
+include (__NAMESPACE__ . '/vendor/phpunit/phpunit/tests/Framework/TestCaseTest.php');
 
 class CalculatorTests extends PHPUnit_Framework_TestCase
 {
