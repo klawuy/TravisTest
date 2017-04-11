@@ -12,7 +12,7 @@ install:
   - composer update
 
 script:
-  - ./phpunit -v
+  - ./vendor/bin/phpunit -v
 
 after_failure:
   - echo 'Tu es une buburne'
