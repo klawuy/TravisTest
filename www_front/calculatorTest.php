@@ -1,5 +1,5 @@
 <?php
-require (__DIR__ . 'calculator.php');
+require (__DIR__ . '/calculator.php');
 
 class CalculatorTests extends PHPUnit_Framework_TestCase
 {
