@@ -11,8 +11,11 @@ before_install:
 install:
   - composer update
 
+script:
+  - ./phpunit -v
+
 after_failure:
-  - echo 'T\'es une buburne'
+  - echo 'Tu es une buburne'
 
 after_success:
   - echo 'Bien joué'
