@@ -21,5 +21,9 @@ after_success:
   - echo 'Bien joué'
 
 notifications:
-  slack: etdsolutions:5tQeepLBMLrQjXKBhhUk3Xzq
+  slack:
+    'etdsolutions:5tQeepLBMLrQjXKBhhUk3Xzq'
+    template:
+          - "%{repository} (%{commit}) : %{message} %{foo} "
+          - "Build details: %{build_url}"
 
