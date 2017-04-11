@@ -19,9 +19,9 @@ define('JPATH_TEMPLATES',     JPATH_ROOT . '/App/Templates');
 // Constantes de l'application
 define('JPATH_BASE', __DIR__);
 define('JPATH_ROOT', dirname(__DIR__));
-define('JPATH_LOGS', JPATH_ROOT . '/logs');
-define('JPATH_FORMS', JPATH_ROOT . '/forms');
-define('JPATH_MEDIA', JPATH_BASE . '/media');
+//define('JPATH_LOGS', JPATH_ROOT . '/logs');
+//define('JPATH_FORMS', JPATH_ROOT . '/forms');
+//define('JPATH_MEDIA', JPATH_BASE . '/media');
 
 // Load the Composer autoloader
 require JPATH_ROOT . '/vendor/autoload.php';
