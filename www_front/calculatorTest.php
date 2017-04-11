@@ -1,8 +1,7 @@
 <?php
 require (__DIR__ . '/calculator.php');
-include (__NAMESPACE__ . '/vendor/phpunit/phpunit/tests/Framework/TestCaseTest.php');
 
-class CalculatorTests extends PHPUnit_Framework_TestCase
+class CalculatorTests extends PHPUnit\Framework\TestCase
 {
     private $calculator;
 
