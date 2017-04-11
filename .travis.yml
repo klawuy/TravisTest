@@ -19,3 +19,7 @@ after_failure:
 
 after_success:
   - echo 'Bien joué'
+
+notifications:
+  slack: etdsolutions:5tQeepLBMLrQjXKBhhUk3Xzq
+
