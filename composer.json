@@ -5,7 +5,7 @@
     "license": "GPL-2.0+",
     "version": "1.0.0-alpha",
     "require": {
-        "php": "7.1",
+        "php": "7.0.*",
         "joomla/framework": "1.0.*@stable",
         "symfony/http-foundation": "2.4.*@stable",
         "twig/twig" : "1.*@stable",
