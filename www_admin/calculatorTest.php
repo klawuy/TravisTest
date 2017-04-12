@@ -1,7 +1,9 @@
 <?php
-require (JPATH_BASE . 'www_front/calculator.php');
+require (__NAMESPACE__ . '/www_front/calculator.php');
 
-class CalculatorTests extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class CalculatorTests extends TestCase
 {
     private $calculator;
 
