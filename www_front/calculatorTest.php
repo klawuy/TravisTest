@@ -1,7 +1,9 @@
 <?php
 require (__DIR__ . '/calculator.php');
 
-class CalculatorTests extends PHPUnit\Framework\TestCase
+use PHPUnit\Framework\TestCase;
+
+class CalculatorTests extends TestCase
 {
     private $calculator;
 
