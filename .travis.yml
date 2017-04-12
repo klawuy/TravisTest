@@ -11,7 +11,7 @@ install:
   - composer update
 
 script:
-  - ./vendor/bin/phpunit -v ./www_front/calculatorTest.php
+  - ./vendor/bin/phpunit -v
 
 after_failure:
   - echo 'Tu es une buburne'

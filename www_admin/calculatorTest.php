@@ -1,5 +1,5 @@
 <?php
-require (__NAMESPACE__ . '/www_front/calculator.php');
+require (dirname(__DIR__) . '/www_front/calculator.php');
 
 use PHPUnit\Framework\TestCase;
 
