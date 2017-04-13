@@ -22,7 +22,7 @@ after_failure:
 
 after_success:
   - echo 'Bien joué'
-  - vendor/bin/test-reporter
+  - php vendor/bin/test-reporter
 
 notifications:
   slack:
