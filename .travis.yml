@@ -13,11 +13,16 @@ install:
 script:
   - ./vendor/bin/phpunit -v
 
+addons:
+  code_climate:
+    repo_token: c8c9fd724d09c0d056b571aeb4e98184245c02873ced2074cbbc2732fc3ec227
+
 after_failure:
   - echo 'Tu es une buburne'
 
 after_success:
   - echo 'Bien joué'
+  - vendor/bin/test-reporter
 
 notifications:
   slack:
