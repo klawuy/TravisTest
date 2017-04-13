@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
     <testsuites>
+        <!-- C'est ici que l'on déclare les dossiers contenant les fichiers de test unitaire PHP Unit -->
         <testsuite name="Application Test Suite">
-            <directory>./App/Test/</directory>
+            <directory>./src/Test/</directory>
         </testsuite>
     </testsuites>
 </phpunit>

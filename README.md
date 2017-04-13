@@ -1,4 +1,11 @@
-framework-app
-=============
+# EtdBniFeedback
+Application pour les questionnaires BNI Pas-de-Calais
 
-Joomla! Framework Sample Application
+## Installation
+
+```bash
+yarn global add grunt-cli
+yarn add --dev
+composer install
+grunt
+```

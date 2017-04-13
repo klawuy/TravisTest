@@ -1,19 +1,27 @@
-# IDE based files and folders #
-.buildpath
-.project
-.settings
+# IDE & System Related Files #
 .DS_Store
 .idea
 
-# Files and folders that should not be pushed to the repo #
-App/Config/config.json
-www/assets/css
-www/assets/js
-www/assets/img
+# OSX #
+._*
+.Spotlight-V100
+.Trashes
 
-# Apple Files #
-.DS_STORE
+# Local System Files (i.e. cache, logs, etc.) #
+/etc/config.json
+/etc/config_front.json
+/etc/config_daemon.json
 
-# COMPOSER Files #
-vendor/*
-composer.phar
+# Never ignore #
+# Only apply this rule to the main repository's gitignore files
+!/.gitignore
+
+# Composer
+/vendor
+/**/css/vendor
+/**/fonts/fontawesome*
+/**/js/vendor
+/**/js/dist
+
+# NPM
+/node_modules
