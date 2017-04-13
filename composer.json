@@ -19,7 +19,9 @@
     "fortawesome/font-awesome": "4.7.0",
     "twbs/bootstrap": "4.0.0-alpha.5",
     "twig/twig": "~1.0@stable",
-    "phpunit/phpunit":"6.1",
+    "phpunit/phpunit":"6.1"
+  },
+  "require-dev":{
     "codeclimate/php-test-reporter":"0.4.*"
   },
   "autoload": {
