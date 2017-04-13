@@ -24,6 +24,9 @@ notifications:
     rooms:
     - etdsolutions:5tQeepLBMLrQjXKBhhUk3Xzq#travis_test
     template:
-          - "%{repository}@%{branch} (%{commit} by %{author}) : %{message} %{foo} "
+          - "repo: %{repository}"
+          - "branche: %{branch}"
+          - "commit id: %{commit} by %{author}"
+          - "%{message} %{foo}"
           - "Build details: %{build_url}|#%{build_number}"
 
