@@ -1,0 +1,35 @@
+/*!
+ * @package     EtdBniFeedback
+ *
+ * @version     1.0.0
+ * @copyright   Copyright (C) 2016 ETD Solutions. Tous droits réservés.
+ * @license     http://etd-solutions.com/LICENSE
+ * @author      ETD Solutions http://etd-solutions.com
+ */
+
+// Bootstrap
+@import "bootstrap";
+
+// Font Awesome
+$fa-font-size-base: $font-size-base;
+$fa-line-height-base: $line-height-base;
+@import "font-awesome";
+
+// Bootstrap Theme
+@import "bootstrap-theme";
+
+// Sweet Alert
+@import "lib/sweetalert";
+
+// Utilities
+@import "utilities/display";
+@import "utilities/spacing";
+@import "utilities/text";
+
+// Base
+@import "base";
+
+// Vues
+@import "views/login";
+@import "views/survey";
+@import "views/report";

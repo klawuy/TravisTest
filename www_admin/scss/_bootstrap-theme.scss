@@ -1,0 +1,346 @@
+/*
+ * @package     EtdBniFeedback
+ *
+ * @version     1.0.0
+ * @copyright   Copyright (C) 2016 ETD Solutions. Tous droits réservés.
+ * @license     http://etd-solutions.com/LICENSE
+ * @author      ETD Solutions http://etd-solutions.com
+ */
+
+// Marks
+//
+
+mark, .mark {
+  border-radius: .25rem;
+}
+
+// Form control
+//
+
+// Transparent
+
+.form-control-invisible {
+  background-color: transparent;
+  border-width: 0;
+  outline: none;
+}
+
+// Search
+.search-wrapper {
+  @extend .pos-rel, .d-inline-block;
+  height: 2.4375rem;
+
+  input {
+    @extend .form-control-invisible, .align-middle;
+    min-width: 300px;
+    height: 2.4375rem;
+    padding-left: 2.5rem;
+    transition: all 80ms ease-in-out;
+
+    &:not(:focus):not(.has-content) {
+      min-width: 0;
+      width: 2.4375rem;
+      padding: 0 0 0 2.4375rem;
+      color: $color4;
+
+      + span {
+        color: $color4;
+      }
+    }
+
+    &.has-content, &:focus {
+      padding-right: 1.875rem;
+    }
+
+    &.has-content ~ .search-cancel {
+      display: block;
+    }
+
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 2.4375rem;
+    width: 2.4375rem;
+    text-align: center;
+    transition: all 80ms linear;
+  }
+
+  .search-cancel {
+    @extend .text-sm;
+    display: none;
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 50%;
+    margin-top: -0.625rem;
+    right: 0;
+    text-align: center;
+    background: $color1;
+    color: $gray-lightest;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+}
+
+// Outline
+
+.form-control-outline {
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+
+  &:focus {
+    border-color: #fff;
+    background-color: rgba(#fff, .1);
+    color: #fff;
+  }
+}
+
+// Checkbox et radio perso
+
+.custom {
+  height: 1.25rem;
+
+  label {
+    position: absolute;
+    cursor: pointer;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.125rem solid rgba(#000, .15);
+    background-color: transparent;
+    transition: ease-in-out all .2s;
+
+    &:after {
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 6px;
+      background: transparent;
+      top: 4px;
+      left: 3px;
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+    }
+  }
+
+  input[type="radio"] + label {
+    border-radius: 50%;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    visibility: hidden;
+
+    &:checked + label {
+      border-color: #5CB85C;
+      background-color: #5CB85C;
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.form-check-inline {
+    padding-left: 1.5rem;
+  }
+
+  .form-check-input {
+    margin-left: -1.5rem;
+    margin-top: .125rem;
+  }
+}
+
+.form-control.flatpickr-input {
+  &:disabled,
+  &[readonly] {
+    background-color: $input-bg;
+  }
+}
+
+// Choices
+
+$choices-selector: 'choices';
+$choices-font-size-lg: $font-size-lg;
+$choices-font-size-md: $font-size-base;
+$choices-font-size-sm: $font-size-sm;
+$choices-guttering: 1rem;
+$choices-border-radius: $input-border-radius;
+$choices-border-radius-item: $input-border-radius;
+$choices-bg-color: $input-bg;
+$choices-bg-color-disabled: $input-bg-disabled;
+$choices-bg-color-dropdown: $dropdown-bg;
+$choices-text-color: $input-color;
+$choices-keyline-color: #DDDDDD;
+$choices-primary-color: #00BCD4;
+$choices-disabled-color: #eaeaea;
+$choices-highlight-color: $choices-primary-color;
+$choices-button-icon-path: '../../icons/';
+$choices-button-dimension: 8px;
+$choices-button-offset: 8px;
+@import "choices";
+
+.choices__inner {
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  padding: $input-padding-y $input-padding-x;
+  min-height: 0;
+  border: $input-btn-border-width solid $input-border-color;
+
+  @if $enable-rounded {
+    // Manually use the if/else instead of the mixin to account for iOS override
+    border-radius: $input-border-radius;
+  } @else {
+    // Otherwise undo the iOS default
+    border-radius: 0;
+  }
+
+  @include box-shadow($input-box-shadow);
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.choices {
+
+  .choices__list--dropdown {
+    z-index: $zindex-dropdown;
+  }
+
+  &[data-type*="select-one"]::after {
+    border-color: $dropdown-border-color transparent transparent transparent;
+  }
+
+  &.is-open {
+
+    &[data-type*="select-one"]::after {
+      border-color: transparent transparent $dropdown-border-color transparent;
+    }
+
+    .choices__inner {
+      color: $input-color-focus;
+      background-color: $input-bg-focus;
+      border-color: $input-border-focus;
+      outline: none;
+      @include box-shadow($input-box-shadow-focus);
+
+      @if $enable-rounded {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+    }
+
+    .choices__list--dropdown {
+      border-color: $input-border-focus;
+      @include box-shadow($dropdown-box-shadow);
+    }
+
+  }
+
+  &.transparent {
+
+    .choices__inner {
+      background: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+  }
+
+}
+
+.has-danger {
+  .choices__inner {
+    border-color: $brand-danger;
+  }
+}
+
+// Navbar
+//
+
+.navbar-nav {
+
+  .nav-link {
+    font-size: $font-size-sm;
+    padding-top: .281rem;
+    padding-bottom: .281rem;
+
+    &.user {
+      padding: 0;
+    }
+  }
+
+  .nav-item + .nav-item {
+    margin-left: 2.5rem;
+  }
+}
+
+// Modal
+
+.modal-dialog {
+  > .close {
+    @extend .pos-rel;
+    @extend .d-block;
+    background-color: $color2;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    opacity: .7;
+    transition: ease-in-out opacity .2s;
+    top: -2.5rem;
+    right: -2.5rem;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.modal-content {
+  @include border-radius(.625rem);
+
+  .empty p {
+    margin: 0;
+  }
+}
+
+.modal-title {
+  font-size: 1.625rem;
+  margin-bottom: 1rem;
+}
+
+.modal-footer {
+  padding-top: 0;
+}
+
+.nav-tabs.modal-tabs {
+  padding: 0 $modal-inner-padding;
+
+  .nav-link {
+    padding: 1rem;
+    border: none;
+    border-bottom: solid 3px transparent;
+    color: $color1;
+
+    &.active {
+      color: $color3;
+      border-color: transparent transparent $color3 transparent;
+    }
+
+  }
+}

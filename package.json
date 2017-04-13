@@ -1,0 +1,32 @@
+{
+  "name": "@jbanety/etdbnifeedback",
+  "version": "0.1.0",
+  "description": "EtdBniFeedback",
+  "homepage": "https://github.com/jbanety/EtdBniFeedback",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbanety/EtdBniFeedback.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-amd": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "dot": "^1.1.1",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-etd-dot-compiler": "^0.2.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-sync": "^0.6.2",
+    "postcss-cli": "^2.6.0",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "timeago.js": "^2.0.4"
+  }
+}

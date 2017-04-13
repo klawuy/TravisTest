@@ -1,28 +1,32 @@
 {
-    "name": "com.websparkinc.framework-app",
-    "description": "Sample Framework App.",
-    "keywords": ["framework-app","joomla-framework"],
-    "license": "GPL-2.0+",
-    "version": "1.0.0-alpha",
-    "require": {
-        "php": ">=5.3.10",
-        "joomla/framework": "1.0.*@stable",
-        "symfony/http-foundation": "2.4.*@stable",
-        "twig/twig" : "1.*@stable",
-        "twbs/bootstrap":"2.3.2"
-    },
-	"require-dev": {
-		"filp/whoops": "1.0.*@stable"
-	},
-    "scripts": {
-        "post-install-cmd": [
-            "App\\Setup\\InstallScript::postInstall"
-        ]
-    },
-    "autoload": {
-        "psr-0": {
-            "App": ""
-        }
-    },
-    "minimum-stability": "dev"
+  "name": "jbanety/etdbnifeedback",
+  "type": "project",
+  "minimum-stability": "dev",
+  "description": "EtdBniFeedback by ETD Solutions",
+  "homepage": "https://github.com/jbanety/EtdBniFeedback",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jean-Baptiste Alleaume",
+      "email": "jb.alleaume@etd-solutions.com",
+      "homepage": "http://etd-solutions.com",
+      "role": "Manager"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "joomla/framework": "1.0.*@stable",
+    "fortawesome/font-awesome": "4.7.0",
+    "twbs/bootstrap": "4.0.0-alpha.5",
+    "twig/twig": "~1.0@stable",
+    "phpunit/phpunit":"6.1"
+  },
+  "require-dev":{
+    "codeclimate/php-test-reporter":"0.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "EtdSolutions\\EtdBniFeedback\\": "src/"
+    }
+  }
 }
