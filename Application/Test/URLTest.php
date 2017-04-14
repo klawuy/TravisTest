@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Test;
+namespace  Application\Test;
 
-use src\URL;
+use Application\URL;
 
 use PHPUnit\Framework\TestCase;
 

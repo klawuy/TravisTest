@@ -5,7 +5,7 @@
                 addUncoveredFilesFromWhitelist="true"
                 processUncoveredFilesFromWhitelist="true">
 
-            <directory suffix=".php">./src/</directory>
+            <directory suffix=".php">./Application/</directory>
         </whitelist>
     </filter>
 
@@ -16,7 +16,7 @@
     <testsuites>
         <!-- C'est ici que l'on déclare les dossiers contenant les fichiers de test unitaire PHP Unit -->
         <testsuite name="Application Test Suite">
-            <directory>./src/Test/</directory>
+            <directory>./Application/Test/</directory>
         </testsuite>
     </testsuites>
 </phpunit>

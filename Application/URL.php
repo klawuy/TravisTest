@@ -1,6 +1,6 @@
 <?php
 
-namespace src;
+namespace Application;
 
 class URL
 {
