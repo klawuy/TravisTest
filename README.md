@@ -35,6 +35,6 @@ Référence pour le lancement automatique de CodeClimate: https://docs.codeclima
 Référence pour la connexion entre CodeClimate et Slack: https://docs.codeclimate.com/v1.0/docs/slack-integration
 
 # Résultats (GitHub et Slack)
-Les résultats des tests en intégration continue sont disponibles sur travis-ci.org, cependant pour rendre plus facile l'accès au résultat, ce dernier est également présent sur GitHub par l'affichage d'un check vert ou d'une croix rouge à côté du nom du commit (au clic dessus nous sommes redirigés sur Travis), mais ils peuvent également être pushés sur un channel Slack qui reprend les éléments importants du commit (son nom, l'URL du résultat, le succès ou l'échec, le numéro de commit, le créateur du commit...).<br>
+Les résultats des tests en intégration continue sont disponibles sur http://travis-ci.org, cependant pour rendre plus facile l'accès au résultat, ce dernier est également présent sur GitHub par l'affichage d'un check vert ou d'une croix rouge à côté du nom du commit (au clic dessus nous sommes redirigés sur Travis), mais ils peuvent également être pushés sur un channel Slack qui reprend les éléments importants du commit (son nom, l'URL du résultat, le succès ou l'échec, le numéro de commit, le créateur du commit...).<br>
 
 Référence pour la connexion entre Travis et Slack: https://docs.travis-ci.com/user/notifications/#Configuring-slack-notifications
