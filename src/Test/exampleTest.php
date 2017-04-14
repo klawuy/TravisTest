@@ -1,8 +1,8 @@
 <?php
 
-namespace App\src\Test;
+namespace Application\src\Test;
 
-use App\src\example;
+use Application\src\example;
 
 use PHPUnit\Framework\TestCase;
 

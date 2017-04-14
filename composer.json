@@ -1,14 +1,14 @@
 {
-  "name": "jbanety/etdbnifeedback",
+  "name": "klawuy/TravisTest",
   "type": "project",
   "minimum-stability": "dev",
   "description": "EtdBniFeedback by ETD Solutions",
-  "homepage": "https://github.com/jbanety/EtdBniFeedback",
+  "homepage": "https://github.com/klawuy/TravisTest",
   "license": "proprietary",
   "authors": [
     {
-      "name": "Jean-Baptiste Alleaume",
-      "email": "jb.alleaume@etd-solutions.com",
+      "name": "Kevin Lawuy",
+      "email": "kevin@etd-solutions.com",
       "homepage": "http://etd-solutions.com",
       "role": "Manager"
     }
