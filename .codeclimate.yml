@@ -16,7 +16,6 @@ engines:
     enabled: true
 ratings:
   paths:
-  - "**.css"
   - "**.inc"
   - "**.js"
   - "**.jsx"
