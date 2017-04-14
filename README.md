@@ -38,3 +38,23 @@ Référence pour la connexion entre CodeClimate et Slack: https://docs.codeclima
 Les résultats des tests en intégration continue sont disponibles sur http://travis-ci.org, cependant pour rendre plus facile l'accès au résultat, ce dernier est également présent sur GitHub par l'affichage d'un check vert ou d'une croix rouge à côté du nom du commit (au clic dessus nous sommes redirigés sur Travis), mais ils peuvent également être pushés sur un channel Slack qui reprend les éléments importants du commit (son nom, l'URL du résultat, le succès ou l'échec, le numéro de commit, le créateur du commit...).<br>
 
 Référence pour la connexion entre Travis et Slack: https://docs.travis-ci.com/user/notifications/#Configuring-slack-notifications <br>
+
+## Conseil dans la création de tests unitaires
+La structure du dossier de l'application et du dossier de test doit être la même, exemple:<br>
+Application:<br>
+./phpUnitTutorial/Foo.php<br>
+./phpUnitTutorial/Bar.php<br>
+./phpUnitTutorial/Controller/Baz.php<br><br>
+Dossier de test:<br>
+./phpUnitTutorial/Test/FooTest.php<br>
+./phpUnitTutorial/Test/BarTest.php<br>
+./phpUnitTutorial/Test/Controller/BazTest.php<br>
+<br>
+Un fichier de test est composé du nom du fichier de l'application suivi de "Test" comme dans l'exemple précédent.<br>
+<br>
+Les méthodes de test doivent commencer par "test" suivi du nom de la méthode, suivi de ce qui est testé (en cas d'erreur il est plus facile de retrouver l'endroit où l'erreur apparait: <strong>pas d'abbréviations</strong>)<br>
+<br>
+Les méthodes testées doivent être publiques et chaque fichier de test doit étendre "PHPUnit\Framework\TestCase"<br>
+<br>
+<br>
+<strong>D'autres règles existent mais ce sont les plus importantes</strong>
