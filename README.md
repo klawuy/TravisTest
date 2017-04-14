@@ -1,4 +1,5 @@
 <a href="https://codeclimate.com/github/klawuy/TravisTest/coverage"><img src="https://codeclimate.com/github/klawuy/TravisTest/badges/coverage.svg" /></a>
+<img src="https://travis-ci.org/klawuy/TravisTest.svg?branch=master">
 
 # Projet de base d'un projet PHP avec Travis
 Projet vide permettant d'avoir une base dans la création d'applications en PHP avec un Framework Joomla!
