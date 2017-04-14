@@ -1,12 +1,12 @@
 {
-  "name": "@jbanety/etdbnifeedback",
+  "name": "@klawuy/TravisTest",
   "version": "0.1.0",
-  "description": "EtdBniFeedback",
-  "homepage": "https://github.com/jbanety/EtdBniFeedback",
+  "description": "TravisTest",
+  "homepage": "https://github.com/klawuy/TravisTest",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbanety/EtdBniFeedback.git"
+    "url": "https://github.com/klawuy/TravisTest.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
