@@ -4,10 +4,11 @@
 Projet vide permettant d'avoir une base dans la création d'applications en PHP avec un Framework Joomla!
 
 ## Installation
-Trois fichiers () la racine du projet) sont primordiaux pour le bon fonctionnement projet:
-  - ``` .travis.yml ```   -> Pour le fonctionnement de Travis (fichier de config)
-  - ``` composer.json ``` -> Pour le fonctionnement de Composer
-  - ``` phpunit.xml ```   -> Fichier d'indication de l'emplacement des tests unitaires
+Quatre fichiers (à la racine du projet) sont primordiaux pour le bon fonctionnement projet:
+  - ``` .travis.yml ```       -> Pour le fonctionnement de Travis (fichier de config)
+  - ``` .codeclimate.yml ```  -> Pour le fonctionnement de Code Climate
+  - ``` composer.json ```     -> Pour le fonctionnement de Composer
+  - ``` phpunit.xml ```       -> Fichier d'indication de l'emplacement des tests unitaires
   
 ### Travis
 Tout d'abord, aller sur https://travis-ci.org/ et se connecter avec son compte GitHub.
