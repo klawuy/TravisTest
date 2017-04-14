@@ -2,7 +2,7 @@
 
 namespace src;
 
-class example
+class URL
 {
     public function sluggify($string, $separator = '-', $maxLength = 96)
     {

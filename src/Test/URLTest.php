@@ -2,11 +2,11 @@
 
 namespace src\Test;
 
-use src\example;
+use src\URL;
 
 use PHPUnit\Framework\TestCase;
 
-class exampleTest extends TestCase
+class URLTest extends TestCase
 {
     /*public function testSluggifyReturnsSluggifiedString()
     {
@@ -80,7 +80,7 @@ class exampleTest extends TestCase
      */
     public function testSluggifyReturnsSluggifiedString($originalString, $expectedResult)
     {
-        $url = new example();
+        $url = new URL();
 
         $result = $url->sluggify($originalString);
 
