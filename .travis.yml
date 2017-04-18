@@ -11,8 +11,7 @@ install:
   - composer update
 
 script:
-  - ./vendor/bin/phpunit -v
-  - phpunit --coverage-text=./coverage.txt ./WordWrapTest.php
+  - ./vendor/bin/phpunit -v --coverage-text=./coverage.txt ./WordWrapTest.php
 
 addons:
   code_climate:
