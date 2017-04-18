@@ -12,7 +12,7 @@ install:
 
 script:
   - mkdir ./coverage
-  - ./vendor/bin/phpunit -v --coverage-text=./coverage.txt ./WordWrapTest.php
+  - ./vendor/bin/phpunit -v --coverage-text=./coverage.txt
 
 addons:
   code_climate:
