@@ -11,7 +11,6 @@ install:
   - composer update
 
 script:
-  - mkdir ./coverage
   - ./vendor/bin/phpunit -v --coverage-text=./coverage.txt
 
 addons:
