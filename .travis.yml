@@ -7,12 +7,12 @@ before_install:
   - composer self-update
   - composer clear-cache
 
-
 install:
   - composer update
 
 script:
   - ./vendor/bin/phpunit -v
+  - phpunit --coverage-text=./coverage.txt ./WordWrapTest.php
 
 addons:
   code_climate:
@@ -24,6 +24,7 @@ after_failure:
 after_success:
   - echo 'Bien joué'
   - php vendor/bin/test-reporter
+  - cat ./coverage.txt
 
 notifications:
   slack:
