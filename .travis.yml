@@ -12,6 +12,7 @@ install:
 
 script:
   - ./vendor/bin/phpunit -v --coverage-text=./coverage.txt
+  - ./vendor/bin/phpunit -v --coverage-html=./coverage.html
 
 addons:
   code_climate:
@@ -24,6 +25,7 @@ after_success:
   - echo 'Bien joué'
   - php vendor/bin/test-reporter
   - cat ./coverage.txt
+  - firefox ./coverage.html
 
 notifications:
   slack:
